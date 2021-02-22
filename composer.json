@@ -37,6 +37,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
+            "Nexmo\\Front\\": "modules/Nexmo/Front",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }

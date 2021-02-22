@@ -1,0 +1,13 @@
+input {
+    background-color: lightgray !important;
+}
+
+label{
+    font-family: "Comic Sans MS";
+}
+.card-header{
+    font-family: "Comic Sans MS";
+}
+.btn{
+    font-family: "Comic Sans MS";
+}

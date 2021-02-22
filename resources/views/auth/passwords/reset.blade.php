@@ -63,3 +63,7 @@
     </div>
 </div>
 @endsection
+
+@section('css')
+    <link rel="stylesheet" href="{{asset('admin/admin.css')}}">
+@endsection
