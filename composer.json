@@ -13,7 +13,8 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "laravelcollective/html": "^6.2"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -38,6 +39,11 @@
         "psr-4": {
             "App\\": "app/",
             "Nexmo\\Front\\": "modules/Nexmo/Front",
+            "Nexmo\\User\\": "modules/Nexmo/User",
+            "Nexmo\\Admin\\": "modules/Nexmo/Admin",
+            "Nexmo\\Seo\\": "modules/Nexmo/Seo",
+            "Nexmo\\Common\\": "modules/Nexmo/Common",
+            "Nexmo\\Header\\": "modules/Nexmo/Header",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }

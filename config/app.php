@@ -174,7 +174,12 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Nexmo\Front\Providers\FronServiceProvider::class
+        Nexmo\Front\Providers\FronServiceProvider::class,
+        Nexmo\User\Providers\UserServiceProvider::class,
+        Nexmo\Admin\Providers\AdminServiceProvider::class,
+        Nexmo\Seo\Providers\SeoServiceProvider::class,
+        Nexmo\Common\Providers\CommenServiceProvider::class,
+        Nexmo\Header\Providers\HeaderServiceProvider::class
 
     ],
 
