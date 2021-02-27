@@ -28,16 +28,16 @@
                     <a class="nav-link text-light" href="{{route('seo.index')}}">Seo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="{{route('header.index')}}">Header</a>
+                    <a class="nav-link text-light"  href="{{route('header.index')}}">Header</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="">About</a>
+                    <a class="nav-link text-light" href="{{route('about.index')}}">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="">Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="{{route('front.show')}}">website</a>
+                    <a class="nav-link text-light" target="_blank" href="{{route('front.show')}}">website</a>
                 </li>
 
                 <li class="nav-item">

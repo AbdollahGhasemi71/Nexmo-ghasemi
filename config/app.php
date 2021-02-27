@@ -179,7 +179,8 @@ return [
         Nexmo\Admin\Providers\AdminServiceProvider::class,
         Nexmo\Seo\Providers\SeoServiceProvider::class,
         Nexmo\Common\Providers\CommenServiceProvider::class,
-        Nexmo\Header\Providers\HeaderServiceProvider::class
+        Nexmo\Header\Providers\HeaderServiceProvider::class,
+        Nexmo\About\Providers\AboutServiceProvider::class
 
     ],
 

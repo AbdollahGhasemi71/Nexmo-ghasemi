@@ -44,6 +44,7 @@
             "Nexmo\\Seo\\": "modules/Nexmo/Seo",
             "Nexmo\\Common\\": "modules/Nexmo/Common",
             "Nexmo\\Header\\": "modules/Nexmo/Header",
+            "Nexmo\\About\\": "modules/Nexmo/About",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }

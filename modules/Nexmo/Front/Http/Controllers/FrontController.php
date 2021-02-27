@@ -19,7 +19,8 @@ class FrontController extends Controller
     {
 
         $seo = $this->repo->seoOrderBy();
-        $header=$this->repo->headerAll();
-        return view('Front::front.index', compact('seo','header'));
+        $header=$this->repo->headerOrderBy();
+        $about=$this->repo->aboutAll();
+        return view('Front::front.index', compact('seo','header','about'));
     }
 }
