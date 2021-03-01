@@ -1,5 +1,7 @@
 <?php
 
+use Nexmo\Portfolio\Providers\ProtfolioServiceProvider;
+
 return [
 
     /*
@@ -180,7 +182,11 @@ return [
         Nexmo\Seo\Providers\SeoServiceProvider::class,
         Nexmo\Common\Providers\CommenServiceProvider::class,
         Nexmo\Header\Providers\HeaderServiceProvider::class,
-        Nexmo\About\Providers\AboutServiceProvider::class
+        Nexmo\About\Providers\AboutServiceProvider::class,
+        Nexmo\Skill\Providers\SkillServiceProvider::class,
+        Nexmo\Portfolio\Providers\PortServiceProvider::class
+
+
 
     ],
 

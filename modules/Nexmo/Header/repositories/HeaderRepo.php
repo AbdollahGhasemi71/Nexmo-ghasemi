@@ -29,6 +29,7 @@ class HeaderRepo
             'instagram' => $value->instagram,
             'linkedin' => $value->linkedin,
             'telegram' => $value->telegram,
+            'github' => $value->github,
         ]);
     }
 
@@ -55,7 +56,8 @@ class HeaderRepo
             'title' => $value->title,
             'linkedin' => $value->linkedin,
             'instagram' => $value->instagram,
-            'telegram' => $value->telegram
+            'telegram' => $value->telegram,
+            'github' => $value->github,
         ]);
     }
 

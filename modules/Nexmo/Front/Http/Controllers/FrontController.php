@@ -21,6 +21,16 @@ class FrontController extends Controller
         $seo = $this->repo->seoOrderBy();
         $header=$this->repo->headerOrderBy();
         $about=$this->repo->aboutAll();
-        return view('Front::front.index', compact('seo','header','about'));
+        $skill=$this->repo->skillAll();
+        $skillOrder=$this->repo->skillOrder();
+        $portfoOrder=$this->repo->portfoOrder();
+        $portfo=$this->repo->portfoAll();
+        return view('Front::front.index', compact('seo','header','about',
+            'skill','skillOrder','portfoOrder','portfo'));
+    }
+
+    public function Portfolio()
+    {
+       return view('Front::front.partials.portflio');
     }
 }

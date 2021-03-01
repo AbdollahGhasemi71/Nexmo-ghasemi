@@ -5,9 +5,8 @@
             <img src="{{asset('images/header/'.$header->image)}}" alt="" class="img-fluid rounded-circle">
             <h1 class="text-light"><a href="index.blade.php">{{$header->title}}</a></h1>
             <div class="social-links mt-3 text-center">
-                <a href="{{$header->telegram}}" class="facebook"><i class="bx bxl-telegram"></i></a>
-                <a href="{{$header->instagram}}" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="{{$header->linkedin}}" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="{{$header->github}}" class="linkedin"><i class="bx bxl-github"></i></a>
             </div>
         </div>
 

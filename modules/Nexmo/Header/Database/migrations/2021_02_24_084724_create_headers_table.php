@@ -19,6 +19,7 @@ class CreateHeadersTable extends Migration
             $table->string('telegram', 100)->nullable();
             $table->string('instagram', 100)->nullable();
             $table->string('linkedin',100)->nullable();
+            $table->string('github',100)->nullable();
             $table->string('image',100);
             $table->timestamps();
         });

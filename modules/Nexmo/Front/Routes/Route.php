@@ -6,5 +6,6 @@ use Nexmo\Front\Http\Controllers\FrontController;
 
 Route::group(['namespace' => 'Nexmo\Front\Http\Controllers', 'middleware' => 'web'], function () {
     Route::get('/front-show', [FrontController::class, 'index'])->name('front.show');
+     Route::get('portfolio',[FrontController::class,'Portfolio'])->name('portfolio.detalis');
 
 });

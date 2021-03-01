@@ -43,6 +43,14 @@
                         @enderror
                     </div>
                     <div class="form-group">
+                        {!! Form::label('github','github',['style'=>'font-weight:bold']) !!}
+                        {!! Form::text('github',old('github'),['class'=>'form-control','placeholder'=>'
+ pelase your enter github']) !!}
+                        @error('github')
+                        <p class="text-left text-danger">{{$message}}</p>
+                        @enderror
+                    </div>
+                    <div class="form-group">
                         {!! Form::label('image','image',['style'=>'font-weight:bold']) !!}
                         {!! Form::file('image',['class'=>'form-control','placeholder'=>'
  pelase your enter image']) !!}

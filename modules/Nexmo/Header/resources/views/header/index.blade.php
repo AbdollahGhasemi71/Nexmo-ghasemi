@@ -10,6 +10,7 @@
                     <th>telegram</th>
                     <th>instagram</th>
                     <th>linkedin</th>
+                    <th>GitHub</th>
                     <th>image</th>
                     <th>update</th>
                     <th>delete</th>
@@ -20,6 +21,7 @@
                         <td>{{$item->telegram}}</td>
                         <td>{{$item->instagram}}</td>
                         <td>{{$item->linkedin}}</td>
+                        <td>{{$item->github}}</td>
                         <td>
                             <img src="{{asset('images/header/'.$item->image)}}" height="50" width="50">
                         </td>

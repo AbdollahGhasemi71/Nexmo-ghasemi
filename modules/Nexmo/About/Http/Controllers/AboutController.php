@@ -2,6 +2,8 @@
 
 namespace Nexmo\About\Http\Controllers;
 
+
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Nexmo\About\Http\Requests\AboutcreateRequest;
 use Nexmo\About\repositories\AboutRepo;
@@ -30,7 +32,21 @@ class AboutController extends Controller
 
     public function store(AboutcreateRequest $request)
     {
-        $this->repo->update($request);
+        $this->repo->aboutStore($request);
+        SessionFlash::store();
+        return back();
+    }
+
+
+    public function edit($id)
+    {
+        $about = $this->repo->aboutEdit($id);
+        return view('About::about.edit', compact('about'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $this->repo->aboutUpdate($request, $id);
         SessionFlash::update();
         return redirect(route('about.index'));
     }
@@ -38,7 +54,7 @@ class AboutController extends Controller
 
     public function destroy($id)
     {
-        $this->repo->aboutDelete($id);
+       $this->repo->aboutDelete($id);
         SessionFlash::delete();
         return back();
     }

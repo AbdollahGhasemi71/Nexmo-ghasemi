@@ -28,6 +28,7 @@ class HeaderCreateRequest extends FormRequest
             'instagram' => 'nullable|max:100',
             'telegram' => 'nullable|max:100',
             'linkedin' => 'nullable|max:100',
+            'github' => 'nullable|max:100',
             'image' => 'required|max:100|mimes:png,jpg,jpeg'
         ];
     }
