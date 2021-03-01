@@ -3,8 +3,11 @@
 namespace Nexmo\Front\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+
+use Illuminate\Http\Request;
+use Nexmo\Contact\Models\Contact;
 use Nexmo\Front\repositories\FrontRepo;
-use Nexmo\Seo\Models\Seo;
+
 
 class FrontController extends Controller
 {
@@ -19,18 +22,25 @@ class FrontController extends Controller
     {
 
         $seo = $this->repo->seoOrderBy();
-        $header=$this->repo->headerOrderBy();
-        $about=$this->repo->aboutAll();
-        $skill=$this->repo->skillAll();
-        $skillOrder=$this->repo->skillOrder();
-        $portfoOrder=$this->repo->portfoOrder();
-        $portfo=$this->repo->portfoAll();
-        return view('Front::front.index', compact('seo','header','about',
-            'skill','skillOrder','portfoOrder','portfo'));
+        $header = $this->repo->headerOrderBy();
+        $about = $this->repo->aboutAll();
+        $skill = $this->repo->skillAll();
+        $skillOrder = $this->repo->skillOrder();
+        $portfoOrder = $this->repo->portfoOrder();
+        $portfo = $this->repo->portfoAll();
+        return view('Front::front.index', compact('seo', 'header', 'about',
+            'skill', 'skillOrder', 'portfoOrder', 'portfo'));
     }
 
-    public function Portfolio()
+    public function Contact(Request $request)
     {
-       return view('Front::front.partials.portflio');
+        Contact::create([
+            'fullname' => $request->fullname,
+            'email' => $request->email,
+            'subject' => $request->subject,
+            'message' => $request->message
+        ]);
     }
+
+
 }

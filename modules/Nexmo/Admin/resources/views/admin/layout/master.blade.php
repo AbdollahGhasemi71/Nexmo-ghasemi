@@ -40,6 +40,9 @@
                     <a class="nav-link text-light" href="{{route('portfo.index')}}">Portfolio</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link text-light" href="{{route('contact.index')}}">Contact</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link text-light" target="_blank" href="{{route('front.show')}}">website</a>
                 </li>
 

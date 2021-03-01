@@ -28,8 +28,6 @@
                         <div class="portfolio-links">
                             <a href="{{asset('images/portfo/'.$item->image)}}"
                                data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                            <a href="#"
-                               title="More Details"><i class="bx bx-link"></i></a>
                         </div>
                     </div>
                 </div>
