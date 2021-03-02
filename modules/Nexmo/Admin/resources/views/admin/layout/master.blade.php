@@ -43,6 +43,9 @@
                     <a class="nav-link text-light" href="{{route('contact.index')}}">Contact</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link text-light" href="{{route('contact-backend.index')}}">Contact -backend</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link text-light" target="_blank" href="{{route('front.show')}}">website</a>
                 </li>
 

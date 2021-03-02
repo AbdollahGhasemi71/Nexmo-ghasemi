@@ -185,7 +185,8 @@ return [
         Nexmo\About\Providers\AboutServiceProvider::class,
         Nexmo\Skill\Providers\SkillServiceProvider::class,
         Nexmo\Portfolio\Providers\PortServiceProvider::class,
-        Nexmo\Contact\Providers\ContactServiceProvider::class
+        Nexmo\Contact\Providers\ContactServiceProvider::class,
+        Nexmo\ContactBack\Providers\ContacktBackServiceProvider::class
 
 
 

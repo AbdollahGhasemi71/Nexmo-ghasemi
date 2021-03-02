@@ -48,6 +48,7 @@
             "Nexmo\\Skill\\": "modules/Nexmo/Skill",
             "Nexmo\\Portfolio\\": "modules/Nexmo/Portfolio",
             "Nexmo\\Contact\\": "modules/Nexmo/Contact",
+            "Nexmo\\ContactBack\\": "modules/Nexmo/ContactBack",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }

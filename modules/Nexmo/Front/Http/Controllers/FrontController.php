@@ -28,8 +28,9 @@ class FrontController extends Controller
         $skillOrder = $this->repo->skillOrder();
         $portfoOrder = $this->repo->portfoOrder();
         $portfo = $this->repo->portfoAll();
+        $contactBack = $this->repo->contactBackOrder();
         return view('Front::front.index', compact('seo', 'header', 'about',
-            'skill', 'skillOrder', 'portfoOrder', 'portfo'));
+            'skill', 'skillOrder', 'portfoOrder', 'portfo', 'contactBack'));
     }
 
     public function Contact(Request $request)

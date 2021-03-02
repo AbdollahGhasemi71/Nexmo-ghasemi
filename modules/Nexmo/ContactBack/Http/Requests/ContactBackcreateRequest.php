@@ -1,10 +1,10 @@
 <?php
 
-namespace Nexmo\Portfolio\Http\Requests;
+namespace Nexmo\ContactBack\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PortfoCreateRequest extends FormRequest
+class ContactBackcreateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +24,11 @@ class PortfoCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|max:100',
-            'body' => 'required',
-            'link' => 'required|max:100',
-            'image' => 'required|max:5000|mimes:png,jpeg,jpg'
+            'title'=>'required|max:100',
+            'body'=>'required',
+            'call'=>'required|max:100',
+            'email'=>'required|max:200',
+            'location'=>'required|max:100'
         ];
     }
 }

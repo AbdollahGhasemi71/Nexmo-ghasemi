@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/modules/Nexmo/ContactBack" isTestSource="false" packagePrefix="Nexmo\ContactBack\" />
       <sourceFolder url="file://$MODULE_DIR$/modules/Nexmo/Common" isTestSource="false" packagePrefix="Nexmo\Common\" />
       <sourceFolder url="file://$MODULE_DIR$/modules/Nexmo/Skill" isTestSource="false" packagePrefix="Nexmo\Skill\" />
       <sourceFolder url="file://$MODULE_DIR$/modules/Nexmo/Front" isTestSource="false" packagePrefix="Nexmo\Front\" />

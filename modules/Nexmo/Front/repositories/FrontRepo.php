@@ -5,6 +5,7 @@ namespace Nexmo\Front\repositories;
 
 
 use Nexmo\About\Models\About;
+use Nexmo\ContactBack\Models\ContactBack;
 use Nexmo\Header\Models\Header;
 use Nexmo\Portfolio\Models\Portfolio;
 use Nexmo\Seo\Models\Seo;
@@ -48,6 +49,11 @@ class FrontRepo
     public function portfoAll()
     {
         return Portfolio::all();
+    }
+
+    public function contactBackOrder()
+    {
+        return ContactBack::orderBy('id', 'desc')->take(1)->skip(0)->first();
     }
 
 
